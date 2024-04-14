@@ -29,7 +29,8 @@ import {
     req.body.password = bcrypt.hashSync(req.body.password, 10);
   
     try {
-  
+
+      console.log(req.body.password);
       const result = await addUser(req.body);
       if (!result) {
         const error = new Error(":D")

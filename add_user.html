@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add user page</title>
+</head>
+<body>
+    <h2>Add new user:</h2>
+  <form method="post" action="http://localhost:3000/api/v1/users" enctype="multipart/form-data">
+    <div>
+        Email: 
+        <input type="text" name="email">
+      </div>
+    <div>
+        Käyttäjänimi: 
+        <input type="text" name="username">
+      </div>
+    <div>
+      Salasana: 
+      <input type="text" name="password">
+    </div>
+    <div>
+      <button type="submit">Add user</button>
+    </div>
+  </form>
+
+</body>
+</html>

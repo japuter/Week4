@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sisäänkirjautumis sivu</title>
+</head>
+<body>
+
+  <form method="post" action="http://127.0.0.1:3000/api/v1/auth/login" enctype="multipart/form-data">
+    <div>
+      Käyttäjänimi: 
+      <input type="text" name="username">
+    </div>
+    <div>
+      Salasana: 
+      <input type="text" name="password">
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+</body>
+</html>

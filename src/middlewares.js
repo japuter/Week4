@@ -51,9 +51,10 @@ const errorHandler = (err, req, res, next) => {
 }
 
 const validationErrors = (req, res, next) => {
-  const errors = validationResult(req)
+  const errors = validationResult(req);
 
   console.log("req.file", req.file)
+  console.log("validationErrors: ", errors)
   //console.log("req in validation", req)
 
   if (!errors.isEmpty()) {
@@ -75,6 +76,7 @@ const validationErrors = (req, res, next) => {
 
   next()
 }
+
 
 export {
   authenticateToken, createThumbnail, errorHandler, notFoundHandler, validationErrors
