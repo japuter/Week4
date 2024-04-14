@@ -1,0 +1,17 @@
+# @name login
+POST http://localhost:3000/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin123",
+  "password": "123"
+}
+
+### Token test
+POST http://localhost:3000/api/not-found?token={{login.response.body.token}}
+Content-Type: application/json
+
+{
+  "username": "admin123",
+  "password": "123"
+}
